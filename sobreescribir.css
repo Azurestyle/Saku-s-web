@@ -1,0 +1,19 @@
+#sakugif{
+
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+#easy{
+float:left;
+margin-left:40%;
+
+}
+#hard{
+
+  float:right;
+  margin-right:40%;
+}

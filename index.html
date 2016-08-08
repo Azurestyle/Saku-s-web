@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Saku's Zero Escape</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="sobreescribir.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.1.0.js" charset="utf-8"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+$('#summon').click(function() {
+$('#container1').show('slow', function() {
+
+});
+var audioPersona=document.createElement('audio');
+audioPersona.setAttribute('src','zero.mp3');
+audioPersona.setAttribute('autoplay','autoplay');
+
+});
+
+$('#hard').click(function() {
+
+$('#jumbotron1').hide('slow', function() {
+
+});
+
+$('#jumbotron2').show('slow', function() {
+
+});
+$('#container2').show('slow', function() {
+
+});
+
+});
+
+$('#aceptar').click(function() {
+
+
+  var sakura=$('#focusedInput').val();
+
+  if (sakura=="sakura"||sakura=="Sakura") {
+
+
+    $('#jumbotron2').hide('slow', function() {
+
+});
+
+$('#jumbotron3').show('slow', function() {
+
+});
+$('#container3').show('slow', function() {
+
+});
+
+} else{
+  $('#focusedInput').val("");
+$('#focusedInput').attr("placeholder","¡Sigue intentándolo coseta!");
+
+}
+});
+});
+
+</script>
+  </head>
+  <body>
+    <!-- inicio de NAV -->
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" id="potato" href="index.html">Zero Escape SakuSaku</a>
+        </div>
+</div>
+</nav>
+
+<div class="span7 text-center">
+<a href="#" id="summon" class="btn btn-default">Summon AzuAzu</a>
+</div>
+<br>
+<br>
+<div id="container1" class="container" hidden>
+  <div id="jumbotron1" class="jumbotron">
+<blockquote  id="quote" class="blockquote">
+  <p>HEEEEEEEEYYYYYYY HOLA guaposa, te preguntarás que cojones te estoy obligando a hacer, y si, estoy tocando los huevos un poco antes de darte el regalo. Vas a tener que ir resolviendo puzzles megacomplicados para poder avanzar y conocer donde está el regalo. Tendrás el easy mode y el hard mode, si completas primero el hard mode te regalo una ps..
+Nah, te deseo suerte tesorete <3</p>
+  <small>AzuAzu</small>
+</blockquote>
+<img class="img-responsive" id="sakugif" src="sakusakuwayout.gif" alt="saku" />
+<br>
+<br>
+
+<a href="#" id="easy" class="btn btn-success center-block">Easy</a>
+<a href="#" id="hard" class="btn btn-danger center-block">Hard</a>
+
+</div>
+
+
+
+
+
+
+<div id="container2" class="container" hidden>
+  <div id="jumbotron2" class="jumbotron">
+<blockquote  id="quote" class="blockquote">
+  <p>I art thou and thou art I. Chosen by a guardian to retrie.. the missing c.. Now... I come to thee.. </p>
+  <small>xxxxxx</small>
+</blockquote>
+<img class="img-responsive" id="sakugif" src="sakusakupum.gif" alt="saku" />
+<br>
+<br>
+
+<form>
+<div class="form-group">
+  <label class="control-label" for="focusedInput"></label>
+<input class="form-control" id="focusedInput" type="text" placeholder="Who am I?" value="">
+<a href="#" id="aceptar" class="btn btn-default center-block">Aceptar</a></div>
+
+</form>
+
+<a href="#" id="easy" class="btn btn-success center-block">Easy</a>
+<a href="#" id="hard" class="btn btn-danger center-block">Hard</a>
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="container3" class="container" hidden>
+  <div id="jumbotron3" class="jumbotron">
+<blockquote  id="quote" class="blockquote">
+  <p>¡Lo conseguiste! ¡Felicidades tocaya! Deberías de ir a la habitación y mirar debajo de tu cama ^-^ </p>
+  <small>Sakura Card Captor</small>
+</blockquote>
+<img class="img-responsive" id="sakugif" src="Sakura_anime.png" alt="saku" />
+<br>
+<br>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+  </body>
+
+
+
+
+
+</html>
