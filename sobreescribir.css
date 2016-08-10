@@ -8,12 +8,33 @@
 
 }
 #easy{
-float:left;
-margin-left:40%;
+
+
 
 }
 #hard{
 
-  float:right;
-  margin-right:40%;
+
+
+}
+
+#montaditos{
+
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+width: 500px;
+height:280px;
+
+
+}
+
+#vid{
+position: relative;
+display:block;
+margin-left: auto;
+margin-right: auto;
+width: 500px;
+height:280px;
+
 }

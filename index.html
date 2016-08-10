@@ -36,6 +36,35 @@ $('#container2').show('slow', function() {
 
 });
 
+$('#easy2').click(function() {
+  /* Act on the event */
+  $('#container1').hide('slow', function() {
+
+  });
+  $('#container2').hide('slow', function() {
+
+  });
+  $('#container3').hide('slow', function() {
+
+  });
+  $('#jumbotron1').hide('slow', function() {
+
+  });
+  $('#jumbotron2').hide('slow', function() {
+
+  });
+  $('#jumbotron3').hide('slow', function() {
+
+  });
+  $('#container4').show('slow', function() {
+
+  });
+  $('#jumbotron4').show('slow', function() {
+
+  });
+
+});
+
 });
 
 $('#aceptar').click(function() {
@@ -63,6 +92,84 @@ $('#focusedInput').attr("placeholder","¡Sigue intentándolo coseta!");
 
 }
 });
+$("#focusedInput").keyup(function(event1){
+    if(event1.keyCode == 13){
+        $("#aceptar").click();
+    }
+});
+$("#focusedInput2").keyup(function(event2){
+    if(event2.keyCode == 13){
+        $("#aceptar2").click();
+    }
+});
+
+$('#aceptar2').click(function() {
+
+
+  var tostada=$('#focusedInput2').val();
+
+  if (tostada=="tostilla con nozada"||tostada=="tostilla y nozada"||tostada=="tostilla nozada") {
+
+$('#quote4').replaceWith("<blockquote><p>rdian eve ards</p><small>Azure</small></blockquote>");
+$('#montaditos').replaceWith("<img class='img-responsive' id='montaditos' src='zero.gif' alt='patata' />");
+$('#focusedInput2').val("");
+$('#focusedInput2').attr("placeholder","¡CORRECTO!");
+
+} else{
+  $('#focusedInput2').val("");
+$('#focusedInput2').attr("placeholder","¿Acuerdas no te enserio?");
+
+}
+});
+
+$('#easy').click(function() {
+  /* Act on the event */
+  $('#container1').hide('slow', function() {
+
+  });
+  $('#container2').hide('slow', function() {
+
+  });
+  $('#container3').hide('slow', function() {
+
+  });
+  $('#jumbotron1').hide('slow', function() {
+
+  });
+  $('#jumbotron2').hide('slow', function() {
+
+  });
+  $('#jumbotron3').hide('slow', function() {
+
+  });
+  $('#container4').show('slow', function() {
+
+  });
+  $('#jumbotron4').show('slow', function() {
+
+  });
+  $('#hard2').click(function() {
+
+  $('#jumbotron1').hide('slow', function() {
+
+  });
+  $('#jumbotron3').hide('slow', function() {
+
+  });
+  $('#jumbotron4').hide('slow', function() {
+
+  });
+  $('#jumbotron2').show('slow', function() {
+
+  });
+  $('#container2').show('slow', function() {
+
+  });
+});
+
+});
+
+
 });
 
 </script>
@@ -92,8 +199,8 @@ $('#focusedInput').attr("placeholder","¡Sigue intentándolo coseta!");
 <div id="container1" class="container" hidden>
   <div id="jumbotron1" class="jumbotron">
 <blockquote  id="quote" class="blockquote">
-  <p>HEEEEEEEEYYYYYYY HOLA guaposa, te preguntarás que cojones te estoy obligando a hacer, y si, estoy tocando los huevos un poco antes de darte el regalo. Vas a tener que ir resolviendo puzzles megacomplicados para poder avanzar y conocer donde está el regalo. Tendrás el easy mode y el hard mode, si completas primero el hard mode te regalo una ps..
-Nah, te deseo suerte tesorete <3</p>
+  <p>HEEEEEEEEYYYYYYY HOLA guaposa, vengo a tocar los huevos un poco antes de darte el regalo. Vas a tener que resolver puzzles megacomplicados de la concha creados por mentes privilegiadas para poder conocer donde está el regalo. Tendrás el easy mode y el hard mode, si completas primero el hard mode te regalo una ps..
+Oh wait.. ANIMO CARI <3</p>
   <small>AzuAzu</small>
 </blockquote>
 <img class="img-responsive" id="sakugif" src="sakusakuwayout.gif" alt="saku" />
@@ -104,7 +211,7 @@ Nah, te deseo suerte tesorete <3</p>
 <a href="#" id="hard" class="btn btn-danger center-block">Hard</a>
 
 </div>
-
+</div>
 
 
 
@@ -127,8 +234,10 @@ Nah, te deseo suerte tesorete <3</p>
 <a href="#" id="aceptar" class="btn btn-default center-block">Aceptar</a></div>
 
 </form>
+<br>
+<br>
 
-<a href="#" id="easy" class="btn btn-success center-block">Easy</a>
+<a href="#" id="easy2" class="btn btn-success center-block">Easy</a>
 <a href="#" id="hard" class="btn btn-danger center-block">Hard</a>
 
 </div>
@@ -173,6 +282,13 @@ Nah, te deseo suerte tesorete <3</p>
 <img class="img-responsive" id="sakugif" src="Sakura_anime.png" alt="saku" />
 <br>
 <br>
+<a href="potato.html" class="btn btn-default">Dale aquí</a>
+
+
+</div>
+
+
+
 
 
 
@@ -185,10 +301,40 @@ Nah, te deseo suerte tesorete <3</p>
 
 
 
+
+
+<div id="container4" class="container" hidden>
+  <div id="jumbotron4" class="jumbotron">
+<blockquote  id="quote4" class="blockquote">
+  <p>¿Has elegido el camino fácil? Pues te vas a cagar, espero que sepas de física cuántica y estés preparada para la pregunta que vas a leer a continuación. ¿Cuál es mi almuerzo favorito? </p>
+  <small>Azure</small>
+</blockquote>
+<img class="img-responsive" id="montaditos" src="montaditos.jpg" alt="patata" />
+<br>
+<br>
+
+<form>
+<div class="form-group">
+  <label class="control-label" for="focusedInput"></label>
+<input class="form-control" id="focusedInput2" type="text" placeholder="Hehe" value="">
+<a href="#" id="aceptar2" class="btn btn-default center-block">Aceptar</a></div>
+
+</form>
+<br>
+<br>
+
+<a href="#" id="easy" class="btn btn-success center-block">Easy</a>
+<a href="#" id="hard2" class="btn btn-danger center-block">Hard</a>
+
 </div>
 
 
 
+
+
+
+
+</div>
 
 
 
